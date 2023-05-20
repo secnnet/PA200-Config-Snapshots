@@ -1,0 +1,58 @@
+<!-- GlobalProtect Gateway Configuration -->
+<gateway>
+  <name>Gateway-Name</name> <!-- Specify a name for the gateway -->
+  <interface>ethernet1/1</interface> <!-- Configure the interface for the gateway -->
+  <ip>
+    <ipv4>
+      <interface-management-profile>default</interface-management-profile> <!-- Configure the interface management profile -->
+      <address>1.2.3.4</address> <!-- Configure the public IP address for the gateway -->
+      <netmask>255.255.255.0</netmask> <!-- Specify the subnet mask -->
+    </ipv4>
+  </ip>
+  <ssl-tls-service-profile>ssl-tls-profile</ssl-tls-service-profile> <!-- Specify the SSL/TLS service profile name -->
+  <authentication> <!-- Configure authentication settings -->
+    <client>yes</client> <!-- Enable client authentication -->
+    <username-password> <!-- Specify username/password authentication -->
+      <user>username</user> <!-- Enter the username -->
+      <password>password</password> <!-- Enter the password -->
+    </username-password>
+  </authentication>
+  <ipsec> <!-- Configure IPsec settings if required -->
+    <!-- IPsec configuration options -->
+  </ipsec>
+  <tunnel-ip> <!-- Configure tunnel IP address settings -->
+    <!-- Tunnel IP configuration options -->
+  </tunnel-ip>
+  <!-- Additional settings and configurations as needed -->
+</gateway>
+
+<!-- GlobalProtect Portal Configuration -->
+<portal>
+  <name>Portal-Name</name> <!-- Specify a name for the portal -->
+  <authentication> <!-- Configure authentication settings -->
+    <method>certificate</method> <!-- Specify the authentication method, e.g., certificate-based -->
+    <client-certificate> <!-- Configure client certificate requirements if using certificate authentication -->
+      <!-- Client certificate configuration options -->
+    </client-certificate>
+  </authentication>
+  <client-config> <!-- Configure client settings -->
+    <!-- Client configuration options -->
+  </client-config>
+  <agent-config> <!-- Configure agent settings -->
+    <vpn-pool>vpn-address-pool</vpn-pool> <!-- Specify the VPN address pool -->
+    <!-- Agent configuration options -->
+  </agent-config>
+  <!-- Additional settings and configurations as needed -->
+</portal>
+
+<!-- GlobalProtect Client Settings Configuration -->
+<client-settings>
+  <name>Client-Settings-Name</name> <!-- Specify a name for the client settings -->
+  <app-config> <!-- Configure app settings for Android -->
+    <android>
+      <gateway>Gateway-Name</gateway> <!-- Specify the gateway name -->
+      <!-- App configuration options for Android -->
+    </android>
+  </app-config>
+  <!-- Additional settings and configurations as needed -->
+</client-settings>

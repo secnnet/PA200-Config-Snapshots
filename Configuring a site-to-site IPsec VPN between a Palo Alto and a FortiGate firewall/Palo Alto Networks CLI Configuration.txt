@@ -1,0 +1,33 @@
+# Define the Local Network
+set address <local-network-object-name> ip-netmask <local-network-subnet>
+
+# Configure the IPsec Tunnel
+set network virtual-router <vr-name> protocol bgp enable yes
+set network virtual-router <vr-name> routing-instance default
+set network interface tunnel.<tunnel-id> comment "IPsec VPN Tunnel"
+set network interface tunnel.<tunnel-id> ip <tunnel-local-ip> <tunnel-remote-ip> vr <vr-name>
+set network ike gateway <gateway-name> protocol <ike-protocol>
+set network ike gateway <gateway-name> address <fortigate-public-ip>
+set network ike gateway <gateway-name> version <ike-version>
+set network ike gateway <gateway-name> exchange-mode <ike-exchange-mode>
+set network ike gateway <gateway-name> local-address <tunnel-local-ip>
+set network ike gateway <gateway-name> local-id <local-id>
+set network ike gateway <gateway-name> peer-id <peer-id>
+set network ike gateway <gateway-name> pre-shared-key <pre-shared-key>
+set network ike crypto-profiles <crypto-profile-name> dh-group <dh-group>
+set network ike crypto-profiles <crypto-profile-name> encryption <encryption-algorithm>
+set network ike crypto-profiles <crypto-profile-name> authentication <authentication-algorithm>
+set network ike crypto-profiles <crypto-profile-name> lifetime <lifetime>
+set network ipsec crypto-profiles <crypto-profile-name> dh-group <dh-group>
+set network ipsec crypto-profiles <crypto-profile-name> encryption <encryption-algorithm>
+set network ipsec crypto-profiles <crypto-profile-name> authentication <authentication-algorithm>
+set network ipsec crypto-profiles <crypto-profile-name> lifetime <lifetime>
+set network ipsec tunnel <tunnel-name> auto-key ike-gateway <gateway-name>
+set network ipsec tunnel <tunnel-name> auto-key ipsec-crypto-profile <crypto-profile-name>
+set network ipsec tunnel <tunnel-name> proxy-id <proxy-id-name> local <local-network-object-name> remote <remote-network-subnet>
+set network interface ethernet1/x layer3 <vr-name>
+set network virtual-router <vr-name> interface tunnel.<tunnel-id>
+set network virtual-router <vr-name> routing-table ip static-route 0.0.0.0/0 next-hop <tunnel-remote-ip>
+
+# Configure Security Policies
+set policy from <source-zone> to <destination-zone> source <local-network-object-name> destination <remote-network-subnet> service any action allow

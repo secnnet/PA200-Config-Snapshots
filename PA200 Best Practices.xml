@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <!-- Palo Alto Networks Firewall Configuration -->
+  <devices>
+    <entry name="fw1">
+      <!-- Network Interfaces -->
+      <network>
+        <interface>
+          <ethernet>
+            <!-- Interface Configuration for Ethernet1/1 -->
+            <entry name="ethernet1/1">
+              <layer3>
+                <ip>
+                  <!-- IP Address and Subnet Mask for Ethernet1/1 -->
+                  <entry name="192.168.1.1/24">
+                    <interface-management-profile>default</interface-management-profile>
+                  </entry>
+                </ip>
+              </layer3>
+            </entry>
+            <!-- Interface Configuration for Ethernet1/2 -->
+            <entry name="ethernet1/2">
+              <layer3>
+                <ip>
+                  <!-- IP Address and Subnet Mask for Ethernet1/2 -->
+                  <entry name="10.0.0.1/24">
+                    <interface-management-profile>default</interface-management-profile>
+                  </entry>
+                </ip>
+              </layer3>
+            </entry>
+          </ethernet>
+        </interface>
+      </network>
+      
+      <!-- Virtual System (vsys) -->
+      <vsys>
+        <entry name="vsys1">
+          
+          <!-- Security Zones -->
+          <zone>
+            <!-- Trust Zone Configuration -->
+            <entry name="trust">
+              <network>
+                <layer3>
+                  <!-- Member Interface: Ethernet1/1 -->
+                  <member>ethernet1/1</member>
+                </layer3>
+              </network>
+            </entry>
+            <!-- Untrust Zone Configuration -->
+            <entry name="untrust">
+              <network>
+                <layer3>
+                  <!-- Member Interface: Ethernet1/2 -->
+                  <member>ethernet1/2</member>
+                </layer3>
+              </network>
+            </entry>
+          </zone>
+          
+          <!-- Services -->
+          <service>
+            <!-- Web Service Configuration -->
+            <entry name="web">
+              <protocol>
+                <tcp>
+                  <!-- Port: 80 -->
+                  <port>80</port>
+                </tcp>
+              </protocol>
+            </entry>
+            <!-- SSH Service Configuration -->
+            <entry name="ssh">
+              <protocol>
+                <tcp>
+                  <!-- Port: 22 -->
+                  <port>22</port>
+                </tcp>
+              </protocol>
+            </entry>
+          </service>
+          
+          <!-- Security Rules -->
+          <rulebase>
+            <security>
+              <rules>
+                <!-- Allow Web Traffic from Trust Zone to Untrust Zone -->
+                <entry name="Allow-Web">
+                  <from>
+                    <!-- Source Zone: Trust -->
+                    <member>trust</member>
+                  </from>
+                  <to>
+                    <!-- Destination Zone: Untrust -->
+                    <member>untrust</member>
+                  </to>
+                  <source>
+                    <!-- Source IP: Any -->
+                    <member>any</member>
+                  </source>
+                  <destination>
+                    <!-- Destination IP: Any -->
+                    <member>any</member>
+                  </destination>
+                  <service>
+                    <!-- Service: Web (Port 80) -->
+                    <member>web</member>
+                  </service>
+                  <action>allow</action>
+                </entry>
+                <!-- Allow SSH Traffic from Untrust Zone to Trust Zone -->
+                <entry name="Allow-SSH">
+                  <from>
+                    <!-- Source Zone: Untrust -->
+                    <member>untrust</member>
+                  </from>
+                  <to>
+                    <!-- Destination Zone: Trust -->
+                    <member>trust</member>
+                 

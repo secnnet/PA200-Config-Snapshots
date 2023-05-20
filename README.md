@@ -29,10 +29,6 @@ Each XML configuration file in this repository can be imported into a Palo Alto 
 
 **Note**: Before applying any configuration, ensure that you review and customize the settings to align with your network architecture and security requirements.
 
-## Contributions
-
-Contributions to this repository are welcome. If you have additional XML configurations that demonstrate best practices for the Palo Alto PA-200 firewall, feel free to submit a pull request. Please ensure that the configurations are properly documented and tested.
-
 ## Disclaimer
 
 The configurations shared in this repository are provided as examples and should be carefully reviewed and tested before implementation. The authors are not liable for any issues or damages resulting from the use or misuse of these configurations.

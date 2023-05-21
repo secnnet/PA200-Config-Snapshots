@@ -1,13 +1,25 @@
 show vpn gateway: Displays information about configured VPN gateways.
+
 show vpn ike-sa: Displays IKE (Internet Key Exchange) security associations.
+
 show vpn flow name <value>: Displays the VPN flow information for a specific flow name.
+
 show counter global filter delta yes | match ipsec: Shows the global counters related to IPSec (Internet Protocol Security).
+
 show counter interface tunnel.ID: Shows the counters for a specific tunnel interface.
+
 debug ike pcap on: Enables IKE packet capture for debugging purposes.
+
 view-pcap follow yes debug-pcap ikemgr.pcap: Views the IKE packet capture in real-time.
+
 debug ike pcap off: Disables IKE packet capture.
+
 scp export debug-pcap from ikemgr.pcap to <username@host:path>: Exports the IKE packet capture file using SCP (Secure Copy Protocol).
+
 clear vpn ike-sa gateway <value>: Clears IKE security associations for a specific VPN gateway.
+
 clear vpn ipsec-sa tunnel <value>: Clears IPsec security associations for a specific VPN tunnel.
+
 test vpn ike-sa gateway <value>: Tests IKE security associations for a specific VPN gateway.
+
 test vpn ipsec-sa tunnel <value>: Tests IPsec security associations for a specific VPN tunnel.

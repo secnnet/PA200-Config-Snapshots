@@ -1,0 +1,80 @@
+BiAdmin@FirstPA200> show high-availability state-synchronization
+ 
+--------------------------------------------------------------------------------
+State Synchronization Status: Complete
+--------------------------------------------------------------------------------
+state synchronization to peer device enabled: yes
+--------------------------------------------------------------------------------
+state synchronization messages processed since system up
+ 
+message                          enable   version  sent             received
+--------------------------------------------------------------------------------
+session setup                    yes      9        12291            0
+session teardown                 yes      9        12727            0
+session update                   yes      9        271340           0
+predict session add              yes      9        523              0
+predict session delete           yes      9        501              0
+predict session update           yes      9        12               0
+ARP update                       yes      1        415              0
+ARP delete                       yes      1        0                0
+MAC update                       yes      1        0                0
+MAC delete                       yes      1        0                0
+IPSec sequence number update     yes      3        0                0
+ND update                        yes      1        0                0
+ND delete                        yes      1        0                0
+DoS Aggregate entry update       yes      1        0                0
+DoS Class Tbl IP update          yes      1        0                0
+DoS Class Tbl IP delete          yes      1        0                0
+DoS Block Tbl IP update          yes      1        0                0
+DoS Block Tbl IP delete          yes      1        0                0
+A/A session setup                no       9        0                0
+A/A session statistics           no       9        0                0
+A/A packet forward using HA2     no       9        0                0
+Return MAC Update                yes      1        0                0
+Return MAC Delete                yes      1        0                0
+V6 Return MAC Update             yes      1        0                0
+V6 Return MAC Delete             yes      1        0                0
+HA2 monitor message              yes      1        0                0
+predict session modify           yes      9        0                0
+--------------------------------------------------------------------------------
+ 
+BiAdmin@FirstPA200>
+BiAdmin@SecondPA200> show high-availability state-synchronization
+ 
+--------------------------------------------------------------------------------
+State Synchronization Status: Complete
+--------------------------------------------------------------------------------
+state synchronization to peer device enabled: no (device not in active state)
+--------------------------------------------------------------------------------
+state synchronization messages processed since system up
+ 
+message                          enable   version  sent             received
+--------------------------------------------------------------------------------
+session setup                    yes      9        0                1429
+session teardown                 yes      9        0                1719
+session update                   yes      9        0                13495
+predict session add              yes      9        0                187
+predict session delete           yes      9        0                157
+predict session update           yes      9        0                4
+ARP update                       yes      1        0                36
+ARP delete                       yes      1        0                0
+MAC update                       yes      1        0                0
+MAC delete                       yes      1        0                0
+IPSec sequence number update     yes      3        0                0
+ND update                        yes      1        0                0
+ND delete                        yes      1        0                0
+DoS Aggregate entry update       yes      1        0                0
+DoS Class Tbl IP update          yes      1        0                0
+DoS Class Tbl IP delete          yes      1        0                0
+DoS Block Tbl IP update          yes      1        0                0
+DoS Block Tbl IP delete          yes      1        0                0
+A/A session setup                no       9        0                0
+A/A session statistics           no       9        0                0
+A/A packet forward using HA2     no       9        0                0
+Return MAC Update                yes      1        0                0
+Return MAC Delete                yes      1        0                0
+V6 Return MAC Update             yes      1        0                0
+V6 Return MAC Delete             yes      1        0                0
+HA2 monitor message              yes      1        0                0
+predict session modify           yes      9        0                0
+--------------------------------------------------------------------------------

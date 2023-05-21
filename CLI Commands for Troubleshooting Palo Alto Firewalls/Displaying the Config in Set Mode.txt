@@ -1,0 +1,5 @@
+set cli config-output-format set: This command sets the output format of the CLI configuration commands to "set" format. The "set" format represents the configuration in a series of set commands, where each configuration parameter is set using the "set" keyword. This format is useful when you want to view or edit the configuration in a text-based format.
+
+set cli pager off: By default, the CLI uses a pager that allows you to scroll through long output by pressing the spacebar. This command disables the pager, meaning that when you execute a command, the output will be displayed all at once without paging. This can be helpful when you want to capture or analyze the entire output without interruption.
+
+set cli terminal width 500: This command sets the width of the CLI terminal to 500 characters. By default, the terminal width is often smaller, which means that long lines of output may be wrapped or truncated. Increasing the terminal width to 500 characters ensures that the output is displayed without line wrapping, making it easier to read and analyze long lines of configuration or other output.

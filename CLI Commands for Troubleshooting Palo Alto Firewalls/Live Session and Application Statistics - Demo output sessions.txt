@@ -1,0 +1,9 @@
+System Statistics: ('q' to quit, 'h' for help)
+ 
+Device is up          : 45 days 7 hours 3 mins 51 sec
+Packet rate           : 1218/s
+Throughput            : 9890 Kbps
+Total active sessions : 137
+Active TCP sessions   : 45
+Active UDP sessions   : 88
+Active ICMP sessions  : 3

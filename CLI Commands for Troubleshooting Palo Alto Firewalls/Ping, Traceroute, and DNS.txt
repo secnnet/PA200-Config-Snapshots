@@ -1,0 +1,7 @@
+ping host 8.8.8.8: This command sends ICMP echo request packets to the IP address 8.8.8.8, which is a well-known public DNS server provided by Google. It's commonly used to test basic network connectivity and measure round-trip time (RTT) to the target host.
+
+ping inet6 yes source 2003:51:6012:120::1 host 2a00:1450:4008:800::1017: This command is similar to the previous ping command but specifically for IPv6 addresses. It sends ICMPv6 echo request packets to the IPv6 address 2a00:1450:4008:800::1017, which is a Google server. The source option specifies the source IPv6 address to use for the ping command.
+
+traceroute host 8.8.8.8: This command traces the route that packets take from your local system to the destination IP address (8.8.8.8 in this case). It shows each hop (intermediate network device) along the path and measures the round-trip time (RTT) to each hop.
+
+ping host ip.google.jp: This command sends ICMP echo request packets to the host ip.google.jp, which is a specific host under the google.jp domain. It's used to test connectivity and measure RTT to that particular host.

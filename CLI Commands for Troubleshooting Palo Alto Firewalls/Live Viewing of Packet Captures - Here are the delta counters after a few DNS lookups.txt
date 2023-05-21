@@ -1,0 +1,20 @@
+bilel@PA200> show counter global filter delta yes severity drop
+ 
+Global counters:
+Elapsed time since last sampling: 166.755 seconds
+ 
+name                                   value     rate severity  category  aspect    description
+--------------------------------------------------------------------------------
+flow_rcv_dot1q_tag_err                   726        4 drop      flow      parse     Packets dropped: 802.1q tag not configured
+flow_no_interface                        726        4 drop      flow      parse     Packets dropped: invalid interface
+flow_ipv6_disabled                         1        0 drop      flow      parse     Packets dropped: IPv6 disabled on interface
+flow_tcp_non_syn_drop                     50        0 drop      flow      session   Packets dropped: non-SYN TCP without session match
+flow_fwd_l3_mcast_drop                    50        0 drop      flow      forward   Packets dropped: no route for IP multicast
+flow_fwd_l3_ttl_zero                       9        0 drop      flow      forward   Packets dropped: IP TTL reaches zero
+flow_fwd_zonechange                        8        0 drop      flow      forward   Packets dropped: forwarded to different zone
+flow_dos_pf_ipspoof                       17        0 drop      flow      dos       Packets dropped: Zone protection option 'discard-ip-spoof'
+flow_dos_pf_noreplyttl                     6        0 drop      flow      dos       Packets dropped: Zone protection option 'suppress-icmp-timeexceeded'
+--------------------------------------------------------------------------------
+Total counters shown: 9
+--------------------------------------------------------------------------------
+ 

@@ -1,0 +1,23 @@
+show high-availability: Displays general information about the high availability configuration.
+
+show high-availability all: Displays detailed information about all aspects of high availability, including state, link monitoring, path monitoring, control link statistics, state synchronization, and flap statistics.
+
+show high-availability state: Displays the current state of high availability, indicating whether it is functional or suspended.
+
+show high-availability link-monitoring: Shows the status and health of the link monitoring feature, which monitors the health of interfaces used for high availability communication.
+
+show high-availability path-monitoring: Displays the status and health of path monitoring, which monitors the availability and reachability of specified IP addresses or hosts.
+
+show high-availability control-link statistics: Shows statistics related to the control link, which is used for synchronization and heartbeat messages between HA peers.
+
+show high-availability state-synchronization: Displays information about state synchronization between the HA peers.
+
+show high-availability flap-statistics: Shows statistics related to interface flapping, which indicates frequent link up and down events on the monitored interfaces.
+
+request high-availability state suspend: Requests the firewall to suspend its high availability state, effectively disabling HA functionality.
+
+request high-availability state functional: Requests the firewall to resume normal high availability state and functionality.
+
+request high-availability state peer suspend: Requests the HA peer firewall to suspend its high availability state.
+
+request high-availability state peer functional: Requests the HA peer firewall to resume normal high availability state and functionality.

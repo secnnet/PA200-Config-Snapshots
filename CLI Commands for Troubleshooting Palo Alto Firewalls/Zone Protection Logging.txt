@@ -1,0 +1,1 @@
+set system setting additional-threat-log on: The command set system setting additional-threat-log on is used to enable additional threat logging on a Palo Alto Firewall.

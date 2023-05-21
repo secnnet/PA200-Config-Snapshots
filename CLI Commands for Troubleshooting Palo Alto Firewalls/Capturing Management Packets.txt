@@ -1,0 +1,9 @@
+tcpdump snaplen 0 filter "port 53": This command uses the tcpdump tool to capture network packets. The snaplen 0 option captures the entire packet, and the filter "port 53" filters the captured packets to only those with a destination or source port of 53, which is commonly used for DNS traffic.
+
+view-pcap follow yes mgmt-pcap mgmt.pcap: This command allows you to view the contents of a packet capture file named mgmt.pcap. It enables following the live capture and displays the captured packets in real-time.
+
+ping host webernetz.net: This command sends ICMP Echo Request packets to the host webernetz.net to check if it's reachable and measure the round-trip time (RTT) for the packets.
+
+scp export mgmt-pcap from mgmt.pcap to <username@host:path>: This command uses the Secure Copy (SCP) protocol to export the packet capture file mgmt.pcap from the Palo Alto Firewall's management plane to a remote host specified by <username@host:path>. You need to replace <username@host:path> with the actual destination details.
+
+tftp export mgmt-pcap from mgmt.pcap to <host>: This command exports the packet capture file mgmt.pcap from the Palo Alto Firewall's management plane to a remote host using the TFTP (Trivial File Transfer Protocol) protocol. You need to replace <host> with the actual destination IP address or hostname.

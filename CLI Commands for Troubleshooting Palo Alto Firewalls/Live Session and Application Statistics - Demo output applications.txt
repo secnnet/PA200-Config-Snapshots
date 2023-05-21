@@ -1,0 +1,17 @@
+Top 20 Application Statistics: ('q' to quit, 'h' for help)
+ 
+Virtual System: vsys1
+application                      sessions   packets      bytes
+-------------------------------- ---------- ------------ ------------
+ssl                              38638      2142072      1538873557
+apt-get                          163        359134       352174998
+ssh                              4712       186837       31146268
+snmpv2                           10378      94154        13782215
+web-browsing                     1485       29975        9750108
+ntp                              23841      43332        4544044
+sip                              3482       3489         1577813
+dns                              3945       11347        1219361
+snmp-base                        201        2838         295602
+smtp                             24         859          258658
+acme-protocol                    10         500          219932
+ping                             1288       2576         183814

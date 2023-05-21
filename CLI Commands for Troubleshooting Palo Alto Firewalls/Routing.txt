@@ -1,0 +1,15 @@
+debug routing pcap <routing-protocol> on: Enables packet capture for a specific routing protocol. Replace <routing-protocol> with the desired protocol (e.g., OSPF, BGP).
+
+debug routing pcap show: Displays the current status of routing protocol packet capture.
+
+debug routing pcap <routing-protocol> view: Views the captured packets for a specific routing protocol.
+
+debug routing pcap <routing-protocol> off: Disables packet capture for a specific routing protocol.
+
+debug routing pcap <routing-protocol> delete: Deletes the captured packets for a specific routing protocol.
+
+tail follow yes mp-log routed.log: Displays the real-time log entries from the routed.log file.
+
+show routing path-monitor: Shows the status and statistics of the path monitoring feature for routing.
+
+debug routing path-monitor: Enables debugging for the path monitoring feature, providing more detailed information about path monitoring events and operations.

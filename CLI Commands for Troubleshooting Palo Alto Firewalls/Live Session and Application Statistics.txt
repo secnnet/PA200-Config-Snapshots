@@ -1,0 +1,3 @@
+show system statistics application: This command provides information and statistics related to application usage on the firewall. It shows details such as the number of sessions, packets, and bytes associated with each application. It can be useful for monitoring and troubleshooting application-related issues on the network.
+
+show system statistics session: This command displays statistics about sessions on the firewall. It provides information on the number of active sessions, maximum concurrent sessions, and various session-related metrics such as packets and bytes processed. This command can be helpful in understanding the current session load on the firewall and identifying any potential session-related problems.

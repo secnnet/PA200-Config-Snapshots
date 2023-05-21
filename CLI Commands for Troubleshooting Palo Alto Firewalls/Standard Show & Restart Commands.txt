@@ -1,0 +1,37 @@
+show system info: Displays system information such as uptime, serial number, and other relevant details.
+
+show system environmentals: Shows environmental information, including power supply failures or other related issues.
+
+show ntp: Displays Network Time Protocol (NTP) configuration and synchronization status.
+
+show session info: Provides information about sessions, including packet rate, number of sessions, and fastpath status.
+
+show session id <id>: Shows detailed information about a specific session identified by its ID.
+
+show interface { all | <interface-name> }: Displays information about network interfaces, either for all interfaces or a specific one.
+
+show routing route: Shows the routing table, including all routes.
+
+show routing fib: Displays the forwarding information base (FIB), which contains the routes used for forwarding packets.
+
+show routing protocol <protocol> ...: Provides information about specific routing protocols, such as OSPF or BGP.
+
+show arp { all | <interface-name> }: Shows the Address Resolution Protocol (ARP) table, which maps IP addresses to MAC addresses.
+
+show neighbor interface { all | <interface-name> }: Displays the IPv6 neighbor cache for a specific interface or all interfaces.
+
+show mac all: Shows the MAC addresses for Layer 2 interfaces.
+
+show jobs all: Displays information about all current jobs or tasks running on the firewall.
+
+show jobs id <id>: Shows details about a specific job or task identified by its ID.
+
+show running resource-monitor: Provides resource statistics, such as CPU and memory usage.
+
+show system resource follow: Similar to the Unix command "top," it displays real-time CPU usage and processes.
+
+show system disk-space: Shows disk space usage on the firewall, similar to the Unix command "df -h."
+
+debug software restart <service>: Restarts a specific process or service for debugging purposes.
+
+request restart system: Initiates a reboot of the entire firewall device.

@@ -1,0 +1,11 @@
+scp export log system to <username@host:path_to_destination_filename>:
+This command exports the system logs from the Palo Alto Firewall to a remote server using the SCP (Secure Copy Protocol) protocol. Replace <username@host:path_to_destination_filename> with the appropriate remote server information and destination file path.
+
+scp import software from <username@host:path>:
+This command imports software (such as firmware or software updates) to the Palo Alto Firewall from a remote server using SCP. Replace <username@host:path> with the appropriate remote server information and source file path.
+
+tftp export configuration from running-config.xml to <tftp-host>:
+This command exports the running configuration of the Palo Alto Firewall to a TFTP (Trivial File Transfer Protocol) server. Replace <tftp-host> with the IP address or hostname of the TFTP server.
+
+tftp import url-block-page from <tftp-host> peer functional:
+This command imports a custom URL block page from a TFTP server and sets it as the active block page on the Palo Alto Firewall. Replace <tftp-host> with the IP address or hostname of the TFTP server.

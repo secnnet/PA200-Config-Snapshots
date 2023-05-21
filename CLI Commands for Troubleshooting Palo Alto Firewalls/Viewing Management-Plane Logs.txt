@@ -1,0 +1,7 @@
+less mp-log: The less command is a pager that allows you to view the contents of a file interactively. In this case, mp-log refers to management plane logs, which contain various logs related to the firewall's management processes.
+
+less mp-log dnsproxyd.log: This command uses less to view the contents of the dnsproxyd.log file in the management plane logs. This log file contains information about DNS proxy activities and events.
+
+tail follow yes mp-log dhcpd.log: The tail command is used to display the last few lines of a file, and the follow option (-f) makes it follow the file as new lines are added. In this case, it is displaying the contents of the dhcpd.log file in the management plane logs. This log file contains DHCP (Dynamic Host Configuration Protocol) related events and activities. The yes option is likely a typo, as it doesn't have any specific meaning in this context.
+
+tail follow yes mp-log routed.log: Similar to the previous command, this command uses tail to display the contents of the routed.log file in the management plane logs. This log file contains information about routing-related events and activities.

@@ -1,0 +1,35 @@
+admin@PA200> show system state filter-pretty sys.s1.p19.phy
+ 
+sys.s1.p19.phy: {
+  link-partner: { },
+  media: SFP-Plus-Fiber,
+  sfp: {
+    connector: LC,
+    encoding: Reserved,
+    identifier: SFP,
+    transceiver: OC48-SR,1000B-SX,100 MBytes,
+    vendor-name: P<A1><A1>o<A1><A1><A1><A1>o<A1>O<A1><A1><A1><A1><A1>,
+    vendor-part-number: SF<A1><A1>G<A1><A1><A1><A1><A1>C<A1><A1><A1><A1><A1>,
+    vendor-part-rev: <A1><A1><A1><A1>,
+  },
+  type: Ethernet,
+}
+ 
+admin@PA200>
+admin@PA200>
+admin@PA200> show system state filter-pretty sys.s1.p19.phy
+ 
+sys.s1.p19.phy: {
+  link-partner: { },
+  media: SFP-Fiber,
+  sfp: {
+    connector: LC,
+    encoding: 8B10B,
+    identifier: SFP,
+    transceiver: 1000B-SX,I dist,SN,
+    vendor-name: AVAGO           ,
+    vendor-part-number: AFBR-5715PZ-JU1 ,
+    vendor-part-rev:     ,
+  },
+  type: Ethernet,
+}

@@ -1,0 +1,5 @@
+debug dataplane packet-diag show setting: This command is used to display the current settings for packet diagnostics in the dataplane. It shows the configuration options related to packet capturing and inspection.
+
+view-pcap follow yes filter-pcap: This command is used to view a packet capture (PCAP) file in real-time, with the ability to follow the packet stream. It allows you to apply a filter to the packet capture and view only specific packets based on the filter criteria.
+
+show counter global filter packet-filter yes delta yes: This command displays packet counters for various firewall components. The "filter packet-filter yes" option enables filtering to display only specific packet counters. The "delta yes" option shows the difference in packet counters since the last time the command was executed.

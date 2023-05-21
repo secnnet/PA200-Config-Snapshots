@@ -1,0 +1,7 @@
+test routing fib-lookup virtual-router default ip <ip>: This command is used to perform a Forwarding Information Base (FIB) lookup for a specific IP address in the default virtual router. It helps to verify the routing information and next-hop for a destination IP.
+
+test vpn ipsec-sa tunnel <value>: This command is used to test IPsec Security Associations (SA) for a specific tunnel. It helps in checking the status and details of the IPsec tunnel.
+
+test security-policy-match: This command is used to test the security policy matching for a packet. It helps in determining whether a packet matches a specific security policy.
+
+test security-policy-match from trans-internet to pa-trust-server source 192.168.86.5 destination 192.168.120.2 protocol 6 application ssl destination-port 443: This command is an example of using the test security-policy-match command with specific parameters. It tests if a packet with the given source, destination, protocol, application, and destination port matches a security policy between the "trans-internet" zone and the "pa-trust-server" zone.

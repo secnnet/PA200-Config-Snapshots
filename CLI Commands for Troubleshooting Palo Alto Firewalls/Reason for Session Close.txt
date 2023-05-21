@@ -1,0 +1,9 @@
+show session id <id>: This command displays detailed information about a specific session identified by its session ID. You would replace <id> with the actual session ID you want to examine.
+
+show log traffic show-tracker equal yes: This command displays traffic logs that have the show-tracker enabled. The show-tracker feature allows you to track a session across multiple logs, providing a more comprehensive view of the traffic flow.
+
+show log traffic show-tracker equal yes direction equal backward: This command further filters the traffic logs with show-tracker enabled, showing only the logs where the traffic direction is backward. This can help you analyze traffic returning from the destination.
+
+show log traffic show-tracker equal yes direction equal backward app equal ipv6-icmp from equal pa-ripe-atlas: This command adds additional filters to the traffic logs with show-tracker enabled. It specifically displays logs where the traffic direction is backward, the application is IPv6 ICMP, and the source is identified as "pa-ripe-atlas." This can be useful for investigating specific traffic scenarios or troubleshooting issues related to these specific parameters.
+
+Keep in mind that these commands are examples, and the specific parameters and filters you use will depend on your specific troubleshooting needs and the configuration of your Palo Alto Firewall. It's always recommended to consult the official documentation or seek assistance from Palo Alto Networks support for accurate and up-to-date troubleshooting guidance.

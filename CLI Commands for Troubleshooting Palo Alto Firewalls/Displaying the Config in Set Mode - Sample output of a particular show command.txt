@@ -1,0 +1,16 @@
+This displays the entire setup using "set..." commands. (For further information, visit this page.) Here's an example of the output of a specific show command:
+
+bilel@PA200# show network interface ethernet ethernet1/1
+set network interface ethernet ethernet1/1 layer3 ip 172.16.1.2/24
+set network interface ethernet ethernet1/1 layer3 untagged-sub-interface no
+set network interface ethernet ethernet1/1 layer3 interface-management-profile ping
+set network interface ethernet ethernet1/1 link-speed auto
+set network interface ethernet ethernet1/1 link-duplex auto
+set network interface ethernet ethernet1/1 link-state auto
+
+With the "match" keyword, the pipe (|) can be used to grep certain values, such as:
+
+bilel@PA200# show | match 192.168.120.2
+set deviceconfig system ip-address 192.168.120.2
+set address h_PA200_mgmt ip-netmask 192.168.120.2
+

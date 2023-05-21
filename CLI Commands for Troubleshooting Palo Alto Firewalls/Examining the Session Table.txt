@@ -1,0 +1,17 @@
+show session all filter state discard: Displays all sessions in the firewall where the state is "discard." This command can be used to check for discarded sessions.
+
+show session all filter application dns destination 8.8.8.8: Displays all sessions in the firewall where the application is DNS and the destination is 8.8.8.8 (Google's public DNS server). This command helps you filter sessions based on specific application and destination criteria.
+
+show session all filter from trust to untrust application ssl state active: Displays all active sessions in the firewall where the traffic is flowing from the trust zone to the untrust zone, using the SSL application.
+
+show session info: Displays general information about sessions, including the session timeout, maximum sessions, and current session count.
+
+show session id <id>: Displays detailed information about a specific session identified by the session ID.
+
+set session offload no: Disables session offload, which allows the firewall to offload session processing to hardware. Disabling session offload can be useful for troubleshooting purposes.
+
+set deviceconfig setting session offload no: Disables session offload persistently, even after reboot. This command should be used with caution as it permanently disables session offload.
+
+show session all filter type predict: Displays all sessions in the firewall where the type is "predict." Predict sessions are used for accelerating traffic that matches known patterns.
+
+clear session id <value>: Clears a specific session identified by the session ID. This command is useful for manually clearing sessions if necessary.

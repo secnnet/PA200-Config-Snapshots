@@ -1,0 +1,3 @@
+show global-protect-gateway current-user: This command displays information about the currently connected GlobalProtect users. It provides details such as the user's IP address, connection status, login time, and other relevant information.
+
+show global-protect-gateway flow: This command shows the current flows or connections established through the GlobalProtect gateway. It provides information about the source and destination IP addresses, ports, protocol, connection status, and other flow-related details.

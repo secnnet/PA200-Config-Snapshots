@@ -1,0 +1,7 @@
+show system state filter-pretty sys.sXXX.pYYY.phy: The command show system state filter-pretty sys.sXXX.pYYY.phy is used to display the current state of a specific physical interface on a Palo Alto Networks device.
+
+In the command, sXXX represents the slot number where the interface is located, and pYYY represents the port number of the interface. By providing the appropriate values for sXXX and pYYY, you can view the detailed status and information about that particular physical interface.
+
+The filter-pretty option formats the output in a more readable and user-friendly manner.
+
+Please note that the actual command may vary depending on the specific model and software version of your Palo Alto Networks device.

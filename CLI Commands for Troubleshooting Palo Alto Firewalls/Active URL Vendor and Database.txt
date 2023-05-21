@@ -1,0 +1,9 @@
+show system setting url-database: The command "show system setting url-database" is used to display the URL filtering database settings on a Palo Alto Firewall. This command provides information about the URL filtering feature, including the URL database being used and its current status.
+
+URL Database Configuration
+-------------------------
+Status: Enabled
+Vendor: PAN-DB
+Database Version: 2023-05-01
+Updates: Automatic
+Update Schedule: Daily

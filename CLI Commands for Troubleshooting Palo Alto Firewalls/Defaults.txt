@@ -1,0 +1,13 @@
+Default Management Interface IP: 192.168.1.1
+Login: admin
+Password: admin
+
+To modify the management interface's static IP settings via the console, follow these steps:
+
+configure set deviceconfig system ip-address 192.168.1.5 netmask 255.255.255.0 default-gateway 192.168.1.1 dns-setting servers main 8.8.8.8 commit
+
+To convert it to a DHCP client (of the management interface), do the following:
+
+set deviceconfig system type dhcp-client send-hostname yes send-client-id no accept-dhcp-domain no accept-dhcp-hostname no commit
+
+And then wait for a console message like DHCP: new ip 10.100.20.175: mask 255.255.255.128. Otherwise, you can display the management IP address by using show interface management. If you want to return to static IP addresses later, you must not only use the set command (for the IP address), but also alter the type: set deviceconfig system type static.

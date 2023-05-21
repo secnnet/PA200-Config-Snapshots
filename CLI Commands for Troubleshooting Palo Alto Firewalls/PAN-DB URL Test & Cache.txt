@@ -1,0 +1,9 @@
+test url <fqdn>: This command tests a specific Fully Qualified Domain Name (FQDN) against the URL filtering database to determine its categorization.
+
+test url-info-cloud <fqdn>: This command provides additional information about a specific FQDN from the URL filtering cloud database.
+
+test url-info-host <fqdn>: This command provides additional information about a specific FQDN from the local Palo Alto Networks device's URL filtering database.
+
+show system setting url-cache all: This command displays information about the URL cache, which is a local storage of previously categorized URLs for faster subsequent lookups.
+
+less dp-log dp_url_DB.log: This command allows you to view the URL filtering log file, which contains information about URL categorizations performed by the Palo Alto Networks device.

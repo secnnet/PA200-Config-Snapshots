@@ -1,0 +1,5 @@
+delete config saved: This command is used to delete a saved configuration on the firewall. It removes the specified saved configuration file from the firewall's storage.
+
+delete config saved <name-of-every-single-config>: This command is similar to the previous one but requires specifying the name of the specific saved configuration file that you want to delete. You need to replace <name-of-every-single-config> with the actual name of the configuration file.
+
+request system private-data-reset: This command is used to perform a factory reset on the Palo Alto Firewall. It deletes all private data, including configurations, certificates, and keys, returning the firewall to its initial state as if it were just out of the box. Performing a private data reset should be done with caution as it irreversibly deletes all data on the firewall. It's recommended to take appropriate backups before executing this command.

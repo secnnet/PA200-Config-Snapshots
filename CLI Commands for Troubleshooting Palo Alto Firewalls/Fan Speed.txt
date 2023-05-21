@@ -1,0 +1,7 @@
+set system setting fan-mode auto
+
+The command set system setting fan-mode auto is used to configure the fan mode of a Palo Alto Networks firewall.
+
+In this command, fan-mode refers to the fan control mode, and auto specifies that the firewall should automatically control the fan speed based on temperature and system load.
+
+By setting the fan mode to "auto," the firewall will adjust the fan speed as needed to maintain optimal cooling and prevent overheating. This helps ensure the firewall operates within safe temperature ranges and maintains proper performance.

@@ -1,0 +1,28 @@
+request system fqdn { show | refresh }: This command is used to either display or refresh the FQDN configuration on the firewall. By using the show option, you can view the current FQDN configuration. The refresh option is used to initiate a refresh of the FQDN information.
+
+configure: This command enters the configuration mode on the firewall, allowing you to make changes to the configuration.
+set deviceconfig system fqdn-refresh-time <600-14399>: This command sets the refresh time interval for FQDN objects. The value range for <600-14399> represents the number of seconds between FQDN refreshes. In this example, the refresh time is set to 600 seconds (10 minutes).
+commit: This command commits the configuration changes made in the configuration mode.
+
+
+The subsequent output you provided shows the configuration before and after the change. The initial output (show | match fqdn-ref) displays the current FQDN refresh time, which is 600 seconds. After entering the set deviceconfig system fqdn-refresh-time 600 command and committing the configuration, the second output confirms the change.
+
+The final command, show jobs all, is used to display the status of all jobs running on the firewall, which can include any pending or completed configuration changes.
+
+BiAdmin@PA200# show | match fqdn-ref
+    fqdn-refresh-time 600;
+[edit]
+
+BiAdmin@PA200# show | match fqdn-ref
+set deviceconfig system fqdn-refresh-time 600
+[edit]
+
+BiAdmin@PA200> show jobs all
+ 
+Enqueued              Dequeued           ID  PositionInQ                              Type                         Status Result Completed
+------------------------------------------------------------------------------------------------------------------------------------------
+2017/02/22 09:55:35   09:55:35          185                                    FqdnRefresh                            FIN     OK 09:55:37
+2017/02/22 09:45:31   09:45:31          184                                    FqdnRefresh                            FIN     OK 09:45:32
+2017/02/22 09:35:28   09:35:28          183                                    FqdnRefresh                            FIN     OK 09:35:31
+2017/02/22 09:25:24   09:25:24          182                                    FqdnRefresh                            FIN     OK 09:25:25
+2017/02/22 09:15:21   09:15:21          181                                    FqdnRefresh                            FIN     OK 09:15:21

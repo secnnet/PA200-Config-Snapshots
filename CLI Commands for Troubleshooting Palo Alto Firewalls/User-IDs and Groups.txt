@@ -1,0 +1,25 @@
+show user group-mapping state all: Displays the state of all group mappings.
+
+debug user-id refresh group-mapping all: Initiates a debug operation to refresh all group mappings.
+
+debug user-id refresh user-id agent all: Initiates a debug operation to refresh all user-ID agents.
+
+debug user-id reset group-mapping all: Resets all group mappings.
+
+debug user-id reset user-id-agent all: Resets all user-ID agents.
+
+show user user-IDs match-user <value>: Displays user-IDs matching a specific value (such as username, IP address, or domain).
+
+show user group name "AD\name-of-the-group": Displays information about a specific user group.
+
+show user ip-user-mapping all: Displays all IP-to-user mappings.
+
+show user ip-user-mapping all | match <username>: Displays IP-to-user mappings filtered by a specific username.
+
+clear user-cache-mp all: Clears the user cache in the management plane.
+
+clear user-cache-mp ip <ip>: Clears the user cache for a specific IP address in the management plane.
+
+clear user-cache all: Clears the user cache in all data planes.
+
+clear user-cache ip <ip>: Clears the user cache for a specific IP address in all data planes.

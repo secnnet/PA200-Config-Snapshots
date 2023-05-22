@@ -1,12 +1,12 @@
 # PA200 Config Snapshots
 
-### Palo Alto PA-200 Firewall Configuration Repository
+### Palo Alto Firewall Configuration Repository
 
-This repository contains a collection of XML configuration files for the Palo Alto Networks PA-200 firewall, aimed at enhancing network security and implementing best practices. These configurations address various security topics to protect your network infrastructure.
+This repository houses XML configuration files for my Palo Alto Networks PA-200 firewall. I am always striving to strengthen network security and implement best practises. These configurations address a variety of security topics in order to safeguard my personal network infrastructure, which is essentially my lab network where I conduct numerous security lab tasks and security research.
 
 ## Overview
 
-The Palo Alto PA-200 is a next-generation firewall that provides advanced security features and capabilities. This repository aims to share XML configuration files that demonstrate best security practices for the PA-200 firewall.
+The Palo Alto Palo Alto is a next-generation firewall that provides advanced security features and capabilities. This repository aims to share XML configuration files that demonstrate best security practices for the Palo Alto firewall.
 
 ## Configuration Files
 
@@ -25,7 +25,7 @@ The repository includes XML configuration files covering the following security 
 
 ## Usage
 
-Each XML configuration file in this repository can be imported into a Palo Alto PA-200 firewall using the appropriate management interface. Refer to the Palo Alto Networks documentation for detailed instructions on importing and applying the configurations.
+Each XML configuration file in this repository can be imported into a Palo Alto Palo Alto firewall using the appropriate management interface. Refer to the Palo Alto Networks documentation for detailed instructions on importing and applying the configurations.
 
 **Note**: Before applying any configuration, ensure that you review and customize the settings to align with your network architecture and security requirements.
 

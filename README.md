@@ -1,4 +1,4 @@
-# PA200 Config Snapshots
+# Palo Alto Config Snapshots
 
 ### Palo Alto Firewall Configuration Repository
 
